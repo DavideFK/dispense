@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Git - GitHub</title>
+    </head>
+    <body>
+        <h1>Git e GitHub</h1>
+        <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/setting-up-git">Guida di riferimento</a>
+        <h2>PROCEDURE</h2>
+        <div>
+            <p>Aggiornare il sitema</p>
+            <code>
+                <ol type="1">
+                    <li>sudo apt update</li>
+                    <li>sudo apt upgrade</li>
+                </ol>
+            </code>
+            <p>Installare Repository <strong>sudo add-apt-repository ppa:git-core/ppa</strong></p>
+            <p>Installare Git e controllare la versione</p>
+            <code>
+                <ol>
+                    <li>sudo add-apt-repository ppa:git-core/ppa</li>
+                    <li>sudo apt update</li>
+                    <li>sudo apt install git</li>
+                </ol>
+            </code>
+            <p>configurare <strong>user name</strong></p>
+            <p>configurare <strong>user email</strong></p>
+            <code>
+                <ol>
+                    <li>git config --global user.name <em>"YOUR USERNAME"</em></li>
+                    <li>git config --global user.email <em>"YOUR EMAIL"</em></li>
+                </ol>
+            </code>
+            <p>Configurare il nuovo branch principale come <strong>main</strong></p>
+            <p>Migliorare l'interfaccia con il colore</p>
+            <p>Controllare i parametri di login</p>
+            <code>
+                <ol>
+                    <li>git config --global init.defaultBranch main</li>
+                    <li>git config --global color.ui auto</em></li>
+                </ol>
+            </code>
+            <p>Controllare i parametri di login</p>
+            <p>Controllare chiave rsa per connettere la macchina al GitHub <small><em>Se non esiste crearne una nuova</em></small></p>
+            <p>Stamparla a schermo e copiarla per incollarla in GitHub nell'apposita opzione di sui dispositivi autorizzati</p>
+            <code>
+                <ol>
+                    <li>ls ~/.ssh/id_rsa.pub</li>
+                    <li>ssh-keygen -C <em>"YOUR EMAIL"</em></li>
+                    <li>cat ~/.ssh/id_rsa.pub</li>
+                </ol>
+            </code>
+        </div>
+        <h2>COMANDI</h2>
+        <div>
+            <code><h2>git --version</h2></code>
+            <code><h2>git <em>"ACTION"</em>--help <small>oppure</small> git help<em>"ACTION"</em></h2></code>
+            <code><h2>git init</h2></code>
+            <code><h2>git status</h2></code>
+        </div>
+    </body>
+</html>
